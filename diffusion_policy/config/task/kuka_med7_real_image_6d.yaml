@@ -1,13 +1,15 @@
 name: kuka_med7_real_image_6d
 
 image_shape: [3, 240, 320]
-dataset_path: /media/a6000-117/eee1def6-b942-4617-96a3-ba01a0d51657/xlh/diffusion_policy/data/my_task/kuka_dp_20260318_134100
+dataset_path: /media/a6000-117/eee1def6-b942-4617-96a3-ba01a0d51657/xlh/diffusion_data/kuka_dp_20260318_134100
 
 shape_meta: &shape_meta
   obs:
+    # camera_0: wrist = 845112071262
     camera_0:
       shape: ${task.image_shape}
       type: rgb
+    # camera_1: side = 215222077100
     camera_1:
       shape: ${task.image_shape}
       type: rgb
